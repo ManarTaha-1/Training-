@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manar Taha — CV</title>
+  <style>
+    :root {
+      --accent: #1F497D;
+      --muted: #e6edf5;
+      --text: #222;
+      --sub: #5a5a5a;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #f4f6f9; 
+      color: var(--text); 
+      font: 12.5px/1.35 "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+      width: 210mm;
+      height: 297mm;
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Page */
+    .page { 
+      width: 210mm; 
+      height: 297mm; 
+      background: #fff; 
+      box-shadow: 0 8px 30px rgba(0,0,0,.06);
+      position: relative;
+    }
+    .inner { 
+      padding: 12mm 12mm; 
+      height: 100%;
+    }
+
+    /* Header */
+    .header { 
+      border-bottom: 5px solid var(--muted); 
+      padding-bottom: 6px; 
+      margin-bottom: 10px;
+    }
+    .name { 
+      font-size: 28px; 
+      letter-spacing: .5px; 
+      font-weight: 800; 
+      color: var(--accent); 
+      margin-bottom: 3px;
+    }
+    .position {
+      font-size: 20px; 
+      letter-spacing: 0.5px; 
+      font-weight: 600; 
+      color: var(--text);
+    }
+
+    /* Grid layout */
+    .grid { 
+      display: grid; 
+      grid-template-columns: 2fr 1fr; 
+      gap: 14px; 
+      height: calc(100% - 60px);
+    }
+
+    /* Sections */
+    h2 { 
+      font-size: 10.5px; 
+      letter-spacing: .12em; 
+      color: var(--accent); 
+      margin: 14px 0 5px; 
+      font-weight: 800; 
+      text-transform: uppercase;
+    }
+    .section { 
+      padding-top: 1px; 
+    }
+    .card { 
+      background: #fff; 
+      border-top: 4px solid var(--muted); 
+      padding-top: 4px; 
+      margin-top: 5px;
+    }
+
+    p { 
+      margin: 0 0 6px; 
+      color: var(--text);
+    }
+    .muted { 
+      color: var(--sub); 
+      font-size: 11.5px;
+    }
+    .bullets { 
+      margin: 0; 
+      padding-left: 14px; 
+    }
+    .bullets li { 
+      margin: 3px 0; 
+    }
+
+    /* Right column lists */
+    .stack { 
+      display: flex; 
+      flex-direction: column; 
+      gap: 7px; 
+    }
+    .list-dots { 
+      list-style: disc; 
+      padding-left: 14px; 
+      margin: 0; 
+    }
+    .list-dots li {
+      margin-bottom: 3px;
+      font-size: 12px;
+    }
+
+    /* Language bars */
+    .lang { 
+      display: grid; 
+      grid-template-columns: 1fr auto; 
+      align-items: center; 
+      gap: 5px; 
+      margin: 4px 0; 
+    }
+    .bar { 
+      height: 5px; 
+      background: #e9eef6; 
+      border-radius: 999px; 
+      overflow: hidden; 
+      grid-column: 1 / -1;
+    }
+    .bar > span { 
+      display: block; 
+      height: 100%; 
+      background: var(--accent); 
+    }
+
+    /* Project title */
+    .proj { 
+      margin-bottom: 10px;
+    }
+    .proj h3 { 
+      margin: 7px 0 4px; 
+      font-size: 12.5px; 
+    }
+    .proj em { 
+      color: #444; 
+      font-style: italic; 
+      font-size: 12px; 
+      display: block;
+      margin-bottom: 3px;
+    }
+    .tech { 
+      font-weight: 700; 
+    }
+
+    /* Contact box */
+    .box { 
+      border-left: 3px solid var(--accent); 
+      padding-left: 7px; 
+    }
+    a { 
+      color: var(--accent); 
+      text-decoration: none; 
+    }
+
+    /* Print */
+    @page { 
+      size: A4; 
+      margin: 0; 
+    }
+    @media print {
+      body { 
+        background: #fff; 
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+      }
+      .page { 
+        box-shadow: none; 
+        margin: 0; 
+        width: 210mm;
+        height: 297mm;
+      }
+      a { 
+        color: inherit; 
+        text-decoration: none; 
+      }
+      .inner {
+        padding: 10mm 10mm;
+      }
+    }
+
+    /* Print button */
+    .print-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 100;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+    
+    .print-button:hover {
+      background: #16385e;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="inner">
+      <!-- Header -->
+      <header class="header">
+        <div class="name">MANAR TAHA</div>
+        <div class="position">FRONT-END DEVELOPER</div>
+      </header>
+
+      <div class="grid">
+        <!-- LEFT COLUMN -->
+        <main>
+          <!-- SUMMARY -->
+          <section class="section card">
+            <h2>SUMMARY</h2>
+            <p>
+              A skilled web developer with expertise in <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>Sass</b>, <b>jQuery</b> and responsive web design.
+              Demonstrates strong problem‑solving and effective communication, ensuring smooth collaboration within teams.
+              Adept with <b>Git &amp; GitHub</b> for version control, with attention to detail and creativity that drives solutions.
+              Currently expanding skills in <b>React</b> and modern UI techniques.
+            </p>
+          </section>
+
+          <!-- WORK HISTORY -->
+          <section class="section card">
+            <h2>WORK HISTORY</h2>
+            <p><b>Front‑End Developer — Student</b></p>
+            <p class="muted">Currently building projects and expanding skillset</p>
+          </section>
+
+          <!-- EDUCATION -->
+          <section class="section card">
+            <h2>EDUCATION</h2>
+            <p><b>Computers and Information</b>, 09/2023 – 08/2027</p>
+            <p>Suez University — Suez, Egypt</p>
+            <p class="muted">Bachelor's degree in Computer Science</p>
+          </section>
+
+          <!-- PROJECTS -->
+          <section class="section card">
+            <h2>PROJECTS</h2>
+
+            <div class="proj">
+              <h3>Nothar</h3>
+              <em>A web‑based platform for browsing and reading categorized articles.</em>
+              <p>• Built with <span class="tech">HTML, CSS, JavaScript</span> and a simple <span class="tech">PHP back‑end</span>.<br>
+                 • Filter by category and view detailed content.<br>
+                 • Clean, responsive front‑end and structured layout focused on clarity and smooth interaction.</p>
+            </div>
+
+            <div class="proj">
+              <h3>E‑Commerce Products Project</h3>
+              <em>A responsive e‑commerce website with shopping cart functionality.</em>
+              <p>• Developed using <span class="tech">HTML, CSS, JavaScript</span>.<br>
+                 • Product listing with clean design; add‑to‑cart and dynamic total price calculation.<br>
+                 • Strengthened <span class="tech">DOM manipulation, event handling,</span> and <span class="tech">UI interactivity</span>. </p>
+            </div>
+
+            <div class="proj">
+              <h3>Special Design</h3>
+              <em>A customizable website with interactive appearance settings.</em>
+              <p>• Developed using <span class="tech">HTML, CSS, JavaScript</span>.<br>
+                 • Users choose color theme, enable/disable background animations, and save preferences with <span class="tech">localStorage</span>.<br>
+                 • Fully responsive; focuses on UX and interactivity.</p>
+            </div>
+
+            <div class="proj">
+              <h3>Calculator</h3>
+              <em>A simple, responsive calculator for basic arithmetic operations.</em>
+              <p>• Built with <span class="tech">HTML, CSS, JavaScript</span>.<br>
+                 • Supports addition, subtraction, multiplication, and division with real‑time display and reset.<br>
+                 • Mobile‑friendly UI.</p>
+            </div>
+          </section>
+        </main>
+
+        <!-- RIGHT COLUMN -->
+        <aside>
+          <!-- CONTACT -->
+          <section class="section card">
+            <h2>CONTACT</h2>
+            <div class="box">
+              <p><b>Address:</b> Ismailia, Egypt</p>
+              <p><b>Phone:</b> 01015108860</p>
+              <p><b>Email:</b> <a href="mailto:manartaha832@gmail.com">manartaha8382@gmail.com</a></p>
+            </div>
+          </section>
+
+          <!-- PROFILES -->
+          <section class="section card">
+            <h2>WEBSITES, PROFILES</h2>
+            <ul class="list-dots">
+              <li><a href="https://www.linkedin.com/in/manar-taha-1847442b6/">linkedin.com/in/Manar-Taha</a></li>
+              <li><a href="https://github.com/ManarTaha-1">GitHub.com/ManarTaha-1</a></li>
+            </ul>
+          </section>
+
+          <!-- SKILLS -->
+          <section class="section card">
+            <h2>SKILLS</h2>
+            <ul class="list-dots">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Responsive Web Design</li>
+              <li>Git &amp; GitHub</li>
+              <li>Sass</li>
+              <li>jQuery</li>
+              <li>Problem Solving</li>
+              <li>C++</li>
+              <li>Java</li>
+              <li>React (learning)</li>
+            </ul>
+          </section>
+
+          <!-- LANGUAGES -->
+          <section class="section card">
+            <h2>LANGUAGES</h2>
+            <div class="lang">
+              <b>Arabic</b><span class="muted">Native</span>
+              <div class="bar"><span style="width: 100%"></span></div>
+            </div>
+            <div class="lang">
+              <b>English</b><span class="muted">Intermediate</span>
+              <div class="bar"><span style="width: 65%"></span></div>
+            </div>
+          </section>
+
+          <!-- INDUSTRY EXPERTISE -->
+          <section class="section card">
+            <h2>INDUSTRY EXPERTISE</h2>
+            <ul class="list-dots">
+              <li>Communication</li>
+              <li>Management</li>
+              <li>Teamwork</li>
+              <li>Time Management</li>
+              <li>Adaptability</li>
+              <li>Attention to Detail</li>
+              <li>Creativity</li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

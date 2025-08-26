@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lemon&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap" rel="stylesheet">
+<title>Special Design</title>
+
+</head>
+<body>
+    <!-- start settings box -->
+    <div class="settings-box">
+        <div class="toggle-settings">
+            <i onclick="settings()"  class="fa-solid fa-gear"></i>
+        </div>
+        <div class="settings-container">
+            <div class="option-box">
+                <h4>Colors</h4>
+                <ul class="colors-list">
+                    <li class="active" data-color="#ce4b86"></li>
+                    <li data-color="#07376e"></li>
+                    <li data-color="#f0a500"></li>
+                    <li data-color="#0c761f"></li>
+                    <li data-color="#6a0572"></li>
+                </ul>
+            </div>
+            <div class="option-box">
+                <h4>Random backgrounds</h4>
+                <div class="random-backgrounds">
+                    <span class="yes active" data-background="yes">Yes</span>
+                    <span class="no" data-background="no">No</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end settings box -->
+    
+    <!-- Start landing page  -->
+    <div class="landing-page">
+        <div class="overlay"></div> <!-- This div creates the overlay effect on all images-->
+        <div class="header-area">
+            <div class="logo">Special Design</div>
+            <ul class="links">
+                <li><a href="#about" class="active">about</a></li>
+                <li><a href="#service">service</a></li>
+                <li><a href="#products">products</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+        <div class="introduction-text">
+            <h1>We are <div class="letter1">c</div><div class="letter2">r</div><div class="letter3">e</div><div class="letter4">a</div><div class="letter5">t</div><div class="letter6">i</div><div class="letter7">v</div><div class="letter8">e</div>  agency </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Quia voluptatum tempora tenetur. Rerum cumque culpa modi pariatur! Praesentium, sint, 
+                repellat odio sequi molestiae pariatur delectus nobis soluta qui quidem corrupti.</p>
+        </div>
+    </div>
+    <!-- end landing page  -->
+    <!-- start about section -->
+    <div class="container">
+        <div class="about-us">
+            <div class="info-box">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus quo commodi laudantium qui deleniti voluptatibus nisi aspernatur suscipit, 
+                accusantium perspiciatis non distinctio praesentium excepturi harum ad eaque delectus, esse reprehenderit?</p>
+            </div>
+            <div class="image-box">
+                <img src="./images/aboutus.png" alt="About Us">
+            </div>
+        </div>
+    </div>
+    <!-- end about section -->
+    <!-- start skills section -->
+    <div class="skills">
+    <div class="container">
+            <h2>Our Skills</h2>
+            <div class="skill-box">
+                <div class="skill-name">JS</div>
+                <div class="skill-progress">
+                    <span data-progress="65%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name" >HTML</div>
+                <div class="skill-progress">
+                    <span data-progress="90%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">CSS</div>
+                <div class="skill-progress">
+                    <span data-progress="82%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">C++</div>
+                <div class="skill-progress">
+                    <span data-progress="75%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">Git</div>
+                <div class="skill-progress">
+                    <span data-progress="55%"></span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-name">GitHub</div>
+                <div class="skill-progress">
+                    <span data-progress="70%"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end skills section -->
+    
+    <!-- start gallery section -->
+
+    <div class="gallery">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="images-box">
+                <img src="images/image1.png" alt="Image One">
+                <img src="images/image2.png" alt="Image Two">
+                <img src="images/image3.jpg" alt="Image Three">
+                <img src="images/image4.jpg" alt="Image Four">
+                <img src="images/image5.png" alt="Image Five">
+                <img src="images/image6.png" alt="Image Six">
+            </div>
+        </div>
+    </div>
+    <!-- end gallery section -->
+    <script src="main.js"></script>
+</body>
+</html>

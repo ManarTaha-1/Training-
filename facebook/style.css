@@ -1,0 +1,83 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+*{
+    font-family: "Lemon" , serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    z-index: 888;
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+.header-l {
+    display: flex;
+    justify-content: space-evenly;
+    width: 33.333%;
+}
+    .space{
+    width: 265px;
+}
+.header-l .manar img{
+ border-radius: 50px;
+ height:30px;
+ margin-left: 5px;
+ margin-top: 3px;
+
+}
+.header-l .image1 i ,.image2 img, .image3 img {
+    background-color:#e2e5e9;
+    border: 5px #e2e5e9 solid;
+    border-radius: 70px;
+}
+.header-l .image1 i{
+ margin-top: 6px;
+}
+.header-l .image2 img{
+ height:30px;
+ margin-top: 5px;
+
+}
+.header-l .image3 img{
+ height:27px;
+ margin-top: 6px;
+
+}
+.header-c {
+ display: flex;
+ justify-content: space-between;
+ width: 33.333%;
+ margin-top: 10px;
+}
+.header-c div i {
+    background-color: rgb(255, 255, 255);
+}
+.header-r{
+    display: flex;
+    justify-content: space-between;
+    width: 33.333%;
+    margin-top: 5px;
+}
+.header-r .space{
+    width: 250px;
+}
+.header-r .icon img{
+    margin-right:13px ;
+    margin-left:5px ;
+}
+input {
+    border-radius: 50px;
+    border: 1px solid #e2e5e9 ;
+    height: 30px;
+}
+input :hover{
+    border: 1px solid #e2e5e9 ;
+}
+.header-r i {
+    color: #e2e5e9;
+}

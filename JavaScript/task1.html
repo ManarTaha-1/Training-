@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript</title>
+</head>
+<body>
+    <ul>
+        <li data-color="red" class="active"></li>
+        <li data-color="green" ></li>
+        <li data-color="blue" ></li>
+        <li data-color="yellow" ></li>
+    </ul>
+    <div class="item"></div>
+        <style>
+        body{
+            background-color: white;
+        }
+        ul{
+            background-color: #ababab;
+            width: 500px;
+            height: 100px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            margin: 40px auto;
+            list-style: none;
+        }
+        ul li:first-child{
+            background-color: rgb(167, 2, 2);
+            width: 20%;
+            border-radius: 10px;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+        }
+        ul li:first-child:hover{
+            background-color: red;
+        }
+        ul li:nth-child(2){
+            background-color:rgb(1, 73, 1);
+            width:20%;
+            border-radius: 10px;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+        }
+        ul li:nth-child(2):hover{
+            background-color: green;
+        }
+        ul li:nth-child(3){
+            background-color: rgb(15, 15, 135);
+            width: 20%;
+            border-radius: 10px;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+        }
+        ul li:nth-child(3):hover{
+            background-color: blue;
+        }
+        ul li:nth-child(4){
+            background-color: rgb(192, 192, 12);
+            width: 20%;
+            border-radius: 10px;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+        }
+        ul li:nth-child(4):hover{
+            background-color: yellow;
+        }
+        .item
+        {
+            background-color: red;
+            width: 700px;
+            height: 600px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+    </style>
+    <script src="task1.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "title": "Marketside Fresh Organic Bananas, Bunch",
+    "description": "Vivamus asipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincudunt. Class aptent taciti sociosqu as litora torquent Vivamus adipinscing nisl ut dolor dignissim semper.",
+    "discount": "56%",
+    "newPrice": 0.89,
+    "oldPrice": 1.99,
+    "images": ["./images/banana1.jpg",
+    "./images/banana2.jpg",
+    "./images/banana3.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Large Garden Spinach & Herb Wrap Tortillas – 15oz_6ct",
+    "description": "Vivamus asipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincudunt. Class aptent taciti sociosqu as litora torquent Vivamus adipinscing nisl ut dolor dignissim semper.",
+    "discount": "16%",
+    "newPrice": 27.90,
+    "oldPrice": 32.90,
+    "images": [
+      "./images/herb1.jpg",
+      "./images/herb2.png",
+      "./images/herb3.png"
+  ]
+  },
+  {
+    "id": 3,
+    "title": "Peach - each",
+    "description": "Vivamus asipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincudunt. Class aptent taciti sociosqu as litora torquent Vivamus adipinscing nisl ut dolor dignissim semper.",
+    "discount": "58%",
+    "newPrice": 0.75,
+    "oldPrice": 1.75,
+    "images":[ "./images/peach1.jpg",
+    "./images/peach2.png",
+    "./images/peach3.png"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Yellow Potatoes Whole Fresh,5lb Bag",
+    "description": "Vivamus asipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincudunt. Class aptent taciti sociosqu as litora torquent Vivamus adipinscing nisl ut dolor dignissim semper.",
+    "discount": "75%",
+    "newPrice": 0.50,
+    "oldPrice": 1.99,
+    "images":[ "./images/potatoes1.jpg",
+    "./images/potatoes2.png",
+    "./images/potatoes3.png"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Fresh Cauliflower, Each",
+    "description": "Vivamus asipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincudunt. Class aptent taciti sociosqu as litora torquent Vivamus adipinscing nisl ut dolor dignissim semper.",
+    "discount": "14%",
+    "newPrice": 12.79,
+    "oldPrice": 14.79,
+    "images": ["./images/cauli1.jpg",
+    "./images/cauli2.png",
+    "./images/cauli3.png"
+    ]
+  
+  },
+  {
+    "id": 6,
+    "title": "Fresh Broccoli Crowns, Each",
+    "description": "Vivamus asipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincudunt. Class aptent taciti sociosqu as litora torquent Vivamus adipinscing nisl ut dolor dignissim semper.",
+    "discount": "36%",
+    "newPrice": 11.54,
+    "oldPrice": 17.88,
+    "images":[ "./images/broccoli1.jpg",
+    "./images/broccoli2.png",
+    "./images/broccoli3.png"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Fresh Purple Eggplant",
+    "description": "Vivamus asipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincudunt. Class aptent taciti sociosqu as litora torquent Vivamus adipinscing nisl ut dolor dignissim semper.",
+    "discount": "26%",
+    "newPrice": 2.99,
+    "oldPrice": 3.99,
+    "images": ["./images/eggplant1.jpg",
+    "./images/eggplant2.png",
+    "./images/eggplant3.png"
+    ]
+  }
+]

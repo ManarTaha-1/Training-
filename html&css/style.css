@@ -1,0 +1,381 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+*{
+    font-family: "Lemon" , serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* start header */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 120px;
+    width: 100%;
+    position: fixed;
+    z-index: 888;
+    display: flex;
+    background-color: white;
+    /* background-color: rgb(255, 255, 255); */
+}
+.logo{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(203, 0, 81);
+}
+.icon{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 30px;
+}
+.icon span{
+    height:5px;
+    background-color:rgb(203, 0, 81) ;
+    margin-bottom:5px;
+    width: 100%;
+}
+.icon span:first-child{
+    width: 100%;
+}
+.icon span:nth-child(2)   {
+    width: 65%;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+.icon span:last-child{
+    width: 100%;
+}
+nav{
+    position: relative;
+}
+nav ul{
+    display: none;
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    background-color:rgb(203, 0, 81);
+
+}
+nav ul li{
+    border-bottom:white 1px solid;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 140px;
+    transition: 0.5;
+    padding:  8px 10px;
+    justify-content: center;
+    justify-items: center;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+nav:hover span:nth-child(2){
+    width: 100%;
+
+}
+header nav:hover ul{
+    display: list-item;
+}
+header nav ul li a:hover{
+    color: rgb(0, 0, 0);
+    padding-left: 25px;
+}
+@media (max-width: 700px){
+   header {
+       padding: 8px 60px;
+   }
+}  
+@media (max-width: 400px){
+   header {
+       padding: 8px 30px;
+   }
+}  
+/* end header */
+/* start section1 */
+section .image img{
+    height: 390px;
+}
+.Home{
+    top: 7%;
+    background-image:url(https://wallpaperaccess.com/full/5065813.jpg);
+    height:calc(100vh);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+section {
+    padding: 100px 110px;
+}
+
+section .text {
+    color: white;
+    padding: 160px 60px;
+}
+section .text span {
+    color: rgb(203, 0, 81);
+    font-size: 50px;
+}
+@media (max-width: 1500px){
+    section {
+        padding: 16px 50px;
+    }
+    section .image img {
+        height: 300px;
+        padding: 50px;
+    }
+    section .text {
+        padding: 90px 0px;
+        
+    }
+    section .text span {
+        font-size: 40px;
+    }
+ }  
+ @media (max-width: 500px){
+    section {
+        padding: 13px 30px;
+    }
+    section .image img {
+        height: 230px;
+        padding: 50px;
+    }
+    section .text {
+        padding: 70px 0px;
+        
+    }
+    section .text span {
+        font-size: 30px;
+    }
+ }
+ @media (max-width: 370px){
+    section {
+        padding: 10px 20px;
+    }
+    section .image img {
+        height: 200px;
+        padding: 50px ;
+    }
+    section .text {
+        padding: 70px 0px;
+        
+    }
+    section .text span {
+        font-size: 30px;
+    }
+ }
+ /* end section1 */
+/* start section2 */
+.aboutme {
+    width: 100%;
+    font-size: 25px;
+    line-height: 2;
+    background-color: white;
+    padding : 30px 20px;
+    /* outline: 1px  rgb(203, 0, 81) solid; */
+}
+.aboutme .front {
+    font-size: 40px;
+    color: rgb(203, 0, 81);
+}
+.aboutme .and {
+    font-size: 38px;
+    color: rgb(203, 0, 81);
+}
+.aboutme .tech {
+    font-size: 30px;
+    color: rgb(203, 0, 81);
+}
+@media (max-width: 1500px){
+    .aboutme {
+        line-height: 1.8;
+        font-size: 23px;
+    }
+    .aboutme .front{
+        font-size: 27px;
+    }
+    .aboutme .tech, 
+    .aboutme .and {
+        font-size: 27px;
+    }
+}
+ @media (max-width: 500px){
+    .aboutme {
+        line-height: 1.7;
+        font-size: 20px;
+    }
+    .aboutme .front{
+        font-size: 25px;
+    }
+    .aboutme .tech, 
+    .aboutme .and {
+        font-size: 25px;
+    }
+ }
+ @media (max-width: 370px){
+    .aboutme {
+        line-height: 1.6;
+        font-size: 18px;
+    }
+    .aboutme .front{
+        font-size: 22px;
+    }
+    .aboutme .tech, 
+    .aboutme .and {
+        font-size: 22px;
+    }
+ }
+/*  end seciton2*/
+/*  start seciton3*/
+.projects{
+    width: 100%;
+    color: white;
+    line-height: 1.7;
+    font-size: 22px;
+    padding: 30px 30px;
+    top: 7%;
+    background-image:url(https://wallpaperaccess.com/full/5065813.jpg);
+    height:calc(100vh);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+/* .projects{
+    width: 100%;
+    line-height: 1.7;
+    font-size: 22px;
+    padding: 20px 30px;
+    background-color: rgb(228, 228, 228);
+} */
+.projects span {
+    color: rgb(203, 0, 81);
+    font-size: 26px;
+}
+.projects .title {
+    font-size: 30px;
+    color: white;
+}
+@media (max-width: 1500px){
+   .projects{
+    font-size: 20px;
+   } 
+   .projects span {
+    font-size: 23px;
+   } 
+   .projects .title {
+    font-size: 27px;
+   }
+}
+ @media (max-width: 500px){
+    .projects{
+        font-size: 18px;
+       } 
+       .projects span {
+        font-size: 20px;
+       } 
+       .projects .title {
+        font-size: 24px;
+       }
+    }
+ @media (max-width: 370px){
+    .projects{
+        font-size: 15px;
+       } 
+       .projects span {
+        font-size: 18px;
+       } 
+       .projects .title {
+        font-size: 21px;
+       }
+ }
+/*  end seciton3*/
+/*  start seciton4*/
+.skills span{
+        color: rgb(203, 0, 81);
+        font-size: 25px;
+}
+.skills .title {
+    font-size: 30px;
+    color: black;
+}
+.skills{
+    width: 100%;
+    line-height: 1.7;
+    font-size: 22px;
+    padding: 20px 30px;
+    background-color: white;
+}
+.skills .front {
+    color: rgb(203, 0, 81);
+    font-size: 25px;
+}
+@media (max-width: 1500px){
+    .skills{
+     font-size: 20px;
+    } 
+    .skills span {
+     font-size: 23px;
+    } 
+    .skills .title {
+     font-size: 27px;
+    }
+    .skills .front {
+        font-size: 22px;
+    }
+ }
+  @media (max-width: 500px){
+     .skills{
+         font-size: 18px;
+        } 
+        .skills span {
+         font-size: 20px;
+        } 
+        .skills .title {
+         font-size: 24px;
+        }
+        .skills .front {
+            font-size: 20px;
+        }
+     }
+  @media (max-width: 370px){
+     .skills{
+         font-size: 15px;
+        } 
+        .skills span {
+         font-size: 18px;
+        } 
+        .skills .title {
+         font-size: 21px;
+        }
+        .skills .front {
+            font-size: 18px;
+        }
+  }
+/*  end seciton4*/
+/*  start seciton5*/
+.contact {
+        width: 100%;
+        padding: 20px 30px;
+        background-color: black;
+        display: flex; 
+        justify-content: space-around;
+        padding: 30px 20px;
+}
+.contact .social-icons a i{
+    color:rgb(203, 0, 81) ;
+    font-size: 50px;
+}
+
+/*  end seciton5*/
